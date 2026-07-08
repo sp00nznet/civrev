@@ -1,0 +1,47 @@
+# Game data (bring your own disc image / XEX)
+extracted/
+Civilization Revolution*/
+*.iso
+*.rar
+*.zip
+*.7z
+
+# Extraction / build logs + local build-wrapper scripts (commands are in README)
+extract_rar.log
+build.log
+harvest.log
+*_run.log
+project/*.ps1
+
+# ReXGlue codegen output (regenerate: cd project && rexglue codegen)
+project/generated/default/
+
+# ReXGlue SDK (external dependency, referenced via $REXSDK)
+tools/rexglue-sdk/
+tools/rexglue-sdk-prebuilt/
+
+# Build artifacts
+build/
+out/
+cmake-build-*/
+.vs/
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.lib
+*.dll
+
+# IDE
+.idea/
+.vscode/
+*.suo
+*.user
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
